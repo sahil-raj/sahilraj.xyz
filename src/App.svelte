@@ -18,6 +18,6 @@
 		height: 100vh;
 		width: 100vw;
 		background: #000;
-		position: absolute;
+		position: fixed;
 	}
 </style>

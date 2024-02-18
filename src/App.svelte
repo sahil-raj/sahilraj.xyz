@@ -19,5 +19,6 @@
 		width: 100vw;
 		background: #000;
 		position: fixed !important;
+		overflow-y: scroll;
 	}
 </style>

@@ -52,5 +52,6 @@
 
     h4 {
         margin-top: 8vh;
+        margin-bottom: 15vh;
     }
 </style>

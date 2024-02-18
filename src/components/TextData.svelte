@@ -1,5 +1,4 @@
 <script>
-    export let loadPercentage = 0;
 </script>
 
 <div>
@@ -8,6 +7,8 @@
 
 <style>
     .main-h {
+        margin-top: 25vh;
+        margin-bottom: 15vh;
         text-align: center;
         font-size: 5rem;
         letter-spacing: 0.3rem;

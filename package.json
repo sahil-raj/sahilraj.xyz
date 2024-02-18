@@ -19,7 +19,6 @@
     "svelte": "^3.55.0"
   },
   "dependencies": {
-    "@vercel/speed-insights": "^1.0.10",
     "sirv-cli": "^2.0.0"
   }
 }

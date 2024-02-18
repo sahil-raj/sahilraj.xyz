@@ -1,18 +1,21 @@
 
-# sahilraj.xyz -profile website
+# sahilraj.xyz - profile website
 
-This is a simple profile website built using sveltejs and bootstrap which will later be replaced by tailwind.css
+This is my portfolio website.
 
-
-## Badges
-
-Add badges from somewhere like: [shields.io](https://shields.io/)
-
-[![GPLv3 License](https://img.shields.io/badge/License-GPL%20v3-yellow.svg)](https://opensource.org/licenses/)
+[sahil-raj.github.io](https://sahil-raj.github.io) also redirects to this.
 
 
+## Tech Stack
 
-## 🔗 Links
-[![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://www.sahilraj.xyz/)
+Sveltejs, Bootstrap and Supabase.
 
+
+## Roadmap
+
+- Later to move from bootstrap to tailwind.css
+
+
+
+![Logo](https://www.sahilraj.xyz/favicon.png)
 

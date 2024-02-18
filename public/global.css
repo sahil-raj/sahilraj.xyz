@@ -2,7 +2,7 @@
 
 * {
 	color: #fff;
-	word-wrap: break-word;
+	word-wrap: overflow-wrap;
 	font-family: "Righteous", sans-serif;
 	font-weight: 400;
 	font-style: normal;

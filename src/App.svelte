@@ -1,8 +1,9 @@
 <script>
 </script>
 
-<main>
-</main>
+<div class="container-fluid">
+	
+</div>
 
 <style>
 </style>

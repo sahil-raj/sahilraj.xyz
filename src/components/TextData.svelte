@@ -29,6 +29,6 @@
         letter-spacing: 0.3rem;
         word-spacing: 0.5rem;
         font-weight: bold;
-        animation: change-color 5s ease-in-out infinite;
+        animation: change-color 5s linear infinite;
     }
 </style>

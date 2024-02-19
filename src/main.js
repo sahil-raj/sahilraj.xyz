@@ -3,7 +3,7 @@ import App from './App.svelte';
 const app = new App({
 	target: document.body,
 	props: {
-		loadPercentage: 35,
+		loadPercentage: 40,
 		statusText: "working on it..."
 	}
 });

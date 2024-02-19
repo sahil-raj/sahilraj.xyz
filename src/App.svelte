@@ -1,14 +1,22 @@
 <script>
     import Cursor from "./components/Cursor.svelte";
+    import NameMain from "./components/NameMain.svelte";
 
     let curPosObj = undefined;
 </script>
 
 <main>
-    <div on:mousemove={(e) => {curPosObj = e;}} class="container-fluid">
-        <Cursor curPosObj={curPosObj}/>
-        <h1 id="main-h1">SAHIL RAJ</h1>
-    </div>    
+    <div
+        class="container-fluid"
+        on:mousemove={(e) => {
+            curPosObj = e;
+        }}
+    >
+        <Cursor {curPosObj} />
+        <div class="main-holder">
+            <NameMain />
+        </div>
+    </div>
 </main>
 
 <style>
@@ -18,13 +26,11 @@
         background-color: rgba(0, 0, 0, 0.7);
         margin: 0 !important;
         position: absolute;
+        padding: 0 !important;
     }
 
-    #main-h1 {
-        text-align: center;
-        font-size: 10vw;
-        margin-top: 40vh;
-        letter-spacing: 0.5vw;
-        word-spacing: 1vw;
+    .main-holder {
+        height: 200vh;
+        width: 100vw;
     }
 </style>

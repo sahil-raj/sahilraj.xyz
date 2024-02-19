@@ -1,5 +1,12 @@
+<script>
+    import Cursor from "./components/Cursor.svelte";
+
+    let curPosObj;
+</script>
+
 <main>
-    <div class="container-fluid">
+    <div on:mousemove={(e) => {curPosObj = e}} class="container-fluid">
+        <Cursor curPosObj={curPosObj}/>
         <h1 id="main-h1">SAHIL RAJ</h1>
     </div>    
 </main>
@@ -17,5 +24,7 @@
         text-align: center;
         font-size: 10vw;
         margin-top: 40vh;
+        letter-spacing: 0.5vw;
+        word-spacing: 1vw;
     }
 </style>

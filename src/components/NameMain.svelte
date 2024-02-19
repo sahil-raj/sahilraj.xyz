@@ -1,7 +1,4 @@
 <script>
-    document.body.onscroll = (e) => {
-        //document.getElementById("main-h1").style.letterSpacing = 0.5*document.documentElement.scrollTop + "px";
-    };
 </script>
 
 <div class="kind-of-header">

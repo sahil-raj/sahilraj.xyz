@@ -1,14 +1,18 @@
 <script>
     export let curPosObj;
-    console.log(curPosObj);
+    $: {
+        let ele = document.getElementById("cursor-div");
+        if (curPosObj) {
+            ele.style.top = curPosObj.y + "px";
+            ele.style.left = curPosObj.x + "px";
+        }
+    }
 </script>
 
-<div class="cursor-div">
-
-</div>
+<div id="cursor-div"></div>
 
 <style>
-    * {
+    #cursor-div {
         height: 2vw;
         width: 2vw;
         background-color: rgba(255, 255, 255, 0.5);

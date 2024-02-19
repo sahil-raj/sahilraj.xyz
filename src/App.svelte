@@ -1,11 +1,11 @@
 <script>
     import Cursor from "./components/Cursor.svelte";
 
-    let curPosObj;
+    let curPosObj = undefined;
 </script>
 
 <main>
-    <div on:mousemove={(e) => {curPosObj = e}} class="container-fluid">
+    <div on:mousemove={(e) => {curPosObj = e;}} class="container-fluid">
         <Cursor curPosObj={curPosObj}/>
         <h1 id="main-h1">SAHIL RAJ</h1>
     </div>    

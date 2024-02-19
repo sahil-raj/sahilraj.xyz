@@ -9,6 +9,7 @@
         <p class="load-per">{loadPercentage}%</p>
     </div>
     <h4 class="status-text">{statusText}</h4>
+    <a href="https://github.com/sahil-raj/sahilraj.xyz">Check updates</a>
 </div>
 
 <style>
@@ -52,6 +53,10 @@
 
     h4 {
         margin-top: 8vh;
-        margin-bottom: 15vh;
+        margin-bottom: 10vh;
+    }
+
+    a {
+        padding-bottom: 15vh !important;
     }
 </style>

@@ -8,16 +8,15 @@
 <style>
     @keyframes change-color {
         0% {
-            color: rgba(0, 0, 255, 0.7);
+            opacity: 100%;
         }
-        25% {
-            color: rgba(225, 0, 255, 0.7);
-        }
+
         50% {
-            color: rgba(255, 0, 0, 0.7);
+            opacity: 50%;
         }
+
         100% {
-            color: rgba(0, 255, 0, 0.7);
+            opacity: 100%;
         }
     }
 
@@ -29,6 +28,6 @@
         letter-spacing: 0.3rem;
         word-spacing: 0.5rem;
         font-weight: bold;
-        animation: change-color 5s linear infinite;
+        animation: change-color 5s ease-in-out infinite;
     }
 </style>

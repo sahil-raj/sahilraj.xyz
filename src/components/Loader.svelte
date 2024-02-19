@@ -40,6 +40,21 @@
         }
     }
 
+    @keyframes change-color-txt {
+        0% {
+            color: rgba(0, 0, 255, 0.7);
+        }
+        25% {
+            color: rgba(225, 0, 255, 0.7);
+        }
+        50% {
+            color: rgba(255, 0, 0, 0.7);
+        }
+        100% {
+            color: rgba(0, 255, 0, 0.7);
+        }
+    }
+
     .loader {
         height: 100%;
         border-radius: 9999px;
@@ -54,6 +69,7 @@
     h4 {
         margin-top: 8vh;
         margin-bottom: 10vh;
+        animation: change-color-txt 5s linear infinite;
     }
 
     a {

@@ -32,7 +32,7 @@
         letter-spacing: 0.5vw;
         word-spacing: 1vw;
         transition: all 1s;
-        z-index: 990 I !important;
+        z-index: 990 !important;
     }
 
     #main-h1:hover {

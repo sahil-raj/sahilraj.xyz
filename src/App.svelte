@@ -3,6 +3,10 @@
     import NameMain from "./components/NameMain.svelte";
 
     let curPosObj = undefined;
+
+    const supabaseU = supabase.createClient('https://fwnyrdapohecdztteehc.supabase.co', 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImZ3bnlyZGFwb2hlY2R6dHRlZWhjIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MDgyOTQwNzcsImV4cCI6MjAyMzg3MDA3N30.4hphr8LKjjZ0K2KolDk0VvWuL1zz0ohq9MIYA0Ldl1o');
+
+    
 </script>
 
 <main>

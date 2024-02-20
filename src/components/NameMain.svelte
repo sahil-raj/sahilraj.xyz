@@ -1,4 +1,5 @@
 <script>
+    import MoveDown from "./MoveDown.svelte";
 </script>
 
 <div class="kind-of-header">

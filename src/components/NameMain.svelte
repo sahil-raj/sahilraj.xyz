@@ -6,6 +6,7 @@
     <div><h1 id="main-h1">SAHIL RAJ</h1></div>
     <div class="back-header"></div>
 </div>
+<MoveDown />
 
 <style>
     .back-header {
@@ -15,7 +16,7 @@
         right: 0;
         bottom: 0;
         background-color: rgba(0, 0, 0, 0.5);
-        filter: blur(3px);
+        filter: blur(5px);
         z-index: -1;
     }
     .kind-of-header {

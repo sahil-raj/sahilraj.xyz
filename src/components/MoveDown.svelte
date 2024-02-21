@@ -1,13 +1,17 @@
 <script>
-    let start;
+    let start, ele;
     document.body.onload = (e) => {
-        start = document.getElementById("holder-all").getBoundingClientRect().top;
+        ele = document.getElementById("holder-all");
+        start = ele.getBoundingClientRect().top;
+        ele.addEventListener("click", (e) => {
+            let vh = Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0);
+            window.scrollTo(0, vh/2);
+        });
     }
 
     document.body.onscroll = (e) => {
-        let curr = document.getElementById("holder-all").getBoundingClientRect().top;
-        let ele = document.getElementById("holder-all");
-        ele.style.opacity = `${Math.floor((curr/start)*100).toString()}%`;
+        let curr = ele.getBoundingClientRect().top;
+        ele.style.opacity = `${Math.floor((curr/start)*100)}%`;
     }
 </script>
 

@@ -1,9 +1,30 @@
-@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
 
 * {
+<<<<<<< HEAD
 	color: #fff;
 	word-wrap: break-word;
 	font-family: "Righteous", sans-serif;
 	font-weight: 400;
 	font-style: normal;
 }
+=======
+    color: #fff;
+    font-family: "Luckiest Guy", cursive;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    cursor: none !important;
+    /* overflow-x: hidden; */
+}
+
+body {
+    background-color: #000 !important;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+>>>>>>> prof_boot

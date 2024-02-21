@@ -5,7 +5,7 @@
         start = ele.getBoundingClientRect().top;
         ele.addEventListener("click", (e) => {
             let vh = Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0);
-            window.scrollTo(0, vh/2);
+            window.scrollTo(0, vh);
         });
     }
 

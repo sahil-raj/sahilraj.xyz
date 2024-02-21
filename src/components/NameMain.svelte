@@ -4,6 +4,7 @@
 
 <div class="kind-of-header">
     <div><h1 id="main-h1">SAHIL RAJ</h1></div>
+    <!-- साहिल राज -->
     <div class="back-header"></div>
 </div>
 <MoveDown />
@@ -16,7 +17,7 @@
         right: 0;
         bottom: 0;
         background-color: rgba(0, 0, 0, 0.5);
-        filter: blur(5px);
+        filter: blur(3px);
         z-index: -1;
     }
     .kind-of-header {

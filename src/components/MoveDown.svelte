@@ -1,12 +1,18 @@
 <script>
+    let start;
+    document.body.onload = (e) => {
+        start = document.getElementById("holder-all").getBoundingClientRect().top;
+    }
+
     document.body.onscroll = (e) => {
-        let myEle = document.getElementsByClassName("holder-all");
-        console.log(e);
+        let curr = document.getElementById("holder-all").getBoundingClientRect().top;
+        let ele = document.getElementById("holder-all");
+        ele.style.opacity = `${Math.floor((curr/start)*100).toString()}%`;
     }
 </script>
 
 <div>
-    <div class="holder-all">
+    <div id="holder-all" class="holder-all">
         <div class="move-down-holder">
             <div class="mover"></div>
         </div>
@@ -45,6 +51,7 @@
     }
 
     .holder-all {
+        opacity: 100%;
         position: absolute;
         text-align: center;
         width: 100%;

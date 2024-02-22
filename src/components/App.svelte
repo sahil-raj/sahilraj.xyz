@@ -1,5 +1,6 @@
 <script>
     import Cursor from "./Cursor.svelte";
+    import QuickConns from "./QuickConns.svelte";
     import NameMain from "./NameMain.svelte";
     import RandomStuff from "./RandomStuff.svelte";
 
@@ -16,16 +17,22 @@
         <h1 class="rotate-h1">PLEASE ROTATE YOUR DEVICE!</h1>
     </div> -->
     <div
-        class="container-fluid"
+        class="container-fluid vh-100 vw-100 position-absolute"
         on:mousemove={(e) => {
             curPosObj = e;
         }}
     >
         <Cursor {curPosObj} />
         <div class="main-holder">
+            <QuickConns />
             <NameMain />
             <div class="content-holder">
                 <!-- enter content here -->
+                <div style="background-color: #4fc3f7;">
+                    <svg viewBox="0 0 500 200">
+                        <path d="M 0,100 C 150,200 350,0 500,100 L 500,00 L 0,0"></path>
+                    </svg>
+                </div>
                 <RandomStuff />
                 <div style="height: 100vh;background-color:#29b6f6;">
                 </div>
@@ -37,11 +44,8 @@
 <style>
     
     .container-fluid {
-        height: 100vh;
-        width: 100vw;
         background-color: rgba(0, 0, 0, 0.7);
         margin: 0 !important;
-        position: absolute;
         padding: 0 !important;
     }
 

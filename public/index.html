@@ -20,6 +20,20 @@
 		integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
 		crossorigin="anonymous"></script>
 	<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+	<!-- <script>
+		function getLost(el) {
+			let start;
+			let ele = document.getElementById(el);
+			document.body.onload = (e) => {
+				start = ele.getBoundingClientRect().top;
+			}
+
+			document.body.onscroll = (e) => {
+				let curr = ele.getBoundingClientRect().top;
+				ele.style.opacity = `${Math.floor((curr / start) * 100)}%`;
+			}
+		}
+	</script> -->
 </head>
 
 <body>

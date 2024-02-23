@@ -4,15 +4,19 @@
         ele = document.getElementById("holder-all");
         start = ele.getBoundingClientRect().top;
         ele.addEventListener("click", (e) => {
-            let vh = Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0);
+            let vh = Math.max(
+                document.documentElement.clientHeight || 0,
+                window.innerHeight || 0,
+            );
             window.scrollTo(0, vh);
         });
-    }
+    };
 
     document.body.onscroll = (e) => {
         let curr = ele.getBoundingClientRect().top;
-        ele.style.opacity = `${Math.floor((curr/start)*100)}%`;
-    }
+        // document.getElementById("main-h1").style.letterSpacing = `${Math.floor(curr/start)}vw`;
+        ele.style.opacity = `${Math.floor((curr / start) * 100)}%`;
+    };
 </script>
 
 <div>
@@ -25,7 +29,6 @@
 </div>
 
 <style>
-
     @keyframes mover {
         0% {
             margin-top: calc(10vh - 1.5rem);

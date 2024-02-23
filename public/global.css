@@ -21,6 +21,23 @@ body {
     user-select: none;
 }
 
+@keyframes gayab {
+    0% {
+        opacity: 100%;
+    }
+
+    100% {
+        opacity: 0%;
+    }
+}
+
+.rand-cont>h1 {
+    font-size: 5vw !important;
+    transition: all 1s;
+    animation: gayab 2s ease-in-out infinite;
+    color: #000;
+}
+
 /* .rotate-div {
     display: none;
     position: fixed;

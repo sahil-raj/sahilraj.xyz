@@ -10,9 +10,14 @@
 
         if (currBodyScroll == 0) {
             start = ele.getBoundingClientRect().top;
+            console.log(start);
             start2 = ele2[0].getBoundingClientRect().top;
+            console.log(start2);
         } else {
-            //when there is already a scroll
+            console.log("this triggred");
+            start2 = 0;
+            start = window.innerHeight*0.8;//reps 80vh
+            console.log(start, start2)
         }
         ele.addEventListener("click", (e) => {
             let vh = Math.max(
@@ -21,7 +26,6 @@
             );
             window.scrollTo(0, vh);
         });
-        // console.log(document.querySelectorAll(".icon-holder"));
     };
 
     document.body.onscroll = (e) => {

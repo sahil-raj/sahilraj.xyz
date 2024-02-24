@@ -3,13 +3,17 @@
 </script>
 
 <div
-    class="position-fixed d-flex top-0 start-0 vh-100 vw-100 flex-row justify-content-between"
+    class="position-fixed d-flex top-0 start-0 vh-100 vw-100 flex-row justify-content-between holder-random-main"
 >
     <div class="icon-holder pt-3 ps-3 pe-3"><i class="lni lni-github"></i></div>
     <div class="icon-holder pt-3 ps-3 pe-3"><i class="lni lni-linkedin"></i></div>
 </div>
 
 <style>
+    .holder-random-main {
+        z-index: 999;
+    }
+    
     .lni {
         font-size: 2rem;
     }
@@ -32,7 +36,6 @@
     }
 
     .icon-holder {
-        z-index: 9999 !important;
-        transition: all 0.1s;
+        transition: all 0.1s ease;
     }
 </style>

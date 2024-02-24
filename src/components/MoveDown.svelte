@@ -1,10 +1,19 @@
 <script>
     let start, ele, start2, ele2;
     document.body.onload = (e) => {
+        let currBodyScroll = document.documentElement.scrollTop
+            ? document.documentElement.scrollTop
+            : document.body.scrollTop;
+
         ele = document.getElementById("holder-all");
         ele2 = document.querySelectorAll(".icon-holder");
-        start = ele.getBoundingClientRect().top;
-        start2 = ele2[0].getBoundingClientRect().top;
+
+        if (currBodyScroll == 0) {
+            start = ele.getBoundingClientRect().top;
+            start2 = ele2[0].getBoundingClientRect().top;
+        } else {
+            //when there is already a scroll
+        }
         ele.addEventListener("click", (e) => {
             let vh = Math.max(
                 document.documentElement.clientHeight || 0,
@@ -22,8 +31,10 @@
         ele.style.opacity = `${Math.floor((curr / start) * 100)}%`;
 
         ele2.forEach((e) => {
-            if (100-Math.floor((curr / start) * 100) <= 90)
-                e.style.marginTop = `${(100-Math.floor((curr / start) * 100))}vh`;
+            if (100 - Math.floor((curr / start) * 100) <= 90)
+                e.style.marginTop = `${
+                    100 - Math.floor((curr / start) * 100)
+                }vh`;
         });
     };
 </script>

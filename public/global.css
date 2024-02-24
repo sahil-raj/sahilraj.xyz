@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
 
+html {
+    scroll-behavior: smooth;
+}
+
 * {
     color: #fff;
     font-family: "Luckiest Guy", cursive;
@@ -28,13 +32,15 @@ body {
 
     100% {
         opacity: 0%;
+        letter-spacing: 0.1vw;
+        filter: blur(2px);
     }
 }
 
 .rand-cont>h1 {
     font-size: 5vw !important;
     transition: all 1s;
-    animation: gayab 2s ease-in-out infinite;
+    animation: gayab 2s ease infinite;
     color: #000;
 }
 

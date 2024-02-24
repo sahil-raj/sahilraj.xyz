@@ -1,8 +1,10 @@
 <script>
-    let start, ele;
+    let start, ele, start2, ele2;
     document.body.onload = (e) => {
         ele = document.getElementById("holder-all");
+        ele2 = document.querySelectorAll(".icon-holder");
         start = ele.getBoundingClientRect().top;
+        start2 = ele2[0].getBoundingClientRect().top;
         ele.addEventListener("click", (e) => {
             let vh = Math.max(
                 document.documentElement.clientHeight || 0,
@@ -10,12 +12,19 @@
             );
             window.scrollTo(0, vh);
         });
+        // console.log(document.querySelectorAll(".icon-holder"));
     };
 
     document.body.onscroll = (e) => {
         let curr = ele.getBoundingClientRect().top;
         // document.getElementById("main-h1").style.letterSpacing = `${Math.floor(curr/start)}vw`;
+        let curr2 = ele2[0].getBoundingClientRect().top;
         ele.style.opacity = `${Math.floor((curr / start) * 100)}%`;
+
+        ele2.forEach((e) => {
+            if (100-Math.floor((curr / start) * 100) <= 90)
+                e.style.marginTop = `${(100-Math.floor((curr / start) * 100))}vh`;
+        });
     };
 </script>
 

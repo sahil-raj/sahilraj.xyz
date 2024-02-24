@@ -16,16 +16,16 @@
         "Engineer",
         "Developer",
         "Student",
-        "Learner",
-        "Blockchain Enthusiast",
+        "Builder",
+        "Blockchain Enthusiast"
     ];
 
     function getHtml(x) {
         let rv = "";
         for (let i = 0; i <= x; ++i)
             rv += `<div class="rand-cont position-absolute" style="left: ${randomInt(
-                0,
-                95,
+                -5,
+                100,
             )}vw;top: ${randomInt(0, 75)}vh;"><h1>${
                 randState[randomInt(0, randState.length - 1)]
             }</h1></div>`;
@@ -39,15 +39,15 @@
 </script>
 
 <div class="wrapper">
-    <div>
-        <h3>WHO<span>?</span></h3>
-    </div>
+    <!-- <div>
+        <h2>WHO<span>?</span></h2>
+    </div> -->
     <div
         class="vw-100 d-flex flex-column justify-content-center align-item-center flex-wrap"
         style="height: 75vh;"
     >
         <div>
-            <h1 class="name-hindi-random fw-bold">साहिल राज</h1>
+            <h1 class="name-hindi-random fw-bold">WHO<span>?</span></h1>
         </div>
         <div
             class="main-random position-absolute vw-100 overflow-hidden"
@@ -69,8 +69,11 @@
         color: rgba(255, 255, 255, 1);
     }
 
-    h3 > span {
-        font-size: 5rem;
-        margin-top: -5vh !important;
+    /* div:has(> .name-hindi-random) {
+    } */
+
+    h1 > span {
+        font-size: 15rem;
+        /* margin-top: -5vh !important; */
     }
 </style>

@@ -5,12 +5,17 @@
     import RandomStuff from "./RandomStuff.svelte";
     import TechStack from "./TechStack.svelte";
 
-    let curPosObj = undefined;
+    let techStackData, curPosObj = undefined;
 
     const supabaseU = supabase.createClient(
         "https://fwnyrdapohecdztteehc.supabase.co",
         "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImZ3bnlyZGFwb2hlY2R6dHRlZWhjIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MDgyOTQwNzcsImV4cCI6MjAyMzg3MDA3N30.4hphr8LKjjZ0K2KolDk0VvWuL1zz0ohq9MIYA0Ldl1o",
     );
+
+    supabaseU.from("tech_stack").select("*").then((data, err) => {
+        if (!err)
+            techStackData = data.data;
+    });
 
     // // store components in variables
     // const page = document.querySelector(".page");
@@ -107,7 +112,7 @@
                     <path fill="#4fc3f7" d="M 0,100 C 150,200 350,0 500,100 L 500,00 L 0,0"
                     ></path>
                 </svg> -->
-                <TechStack />
+                <TechStack {techStackData}/>
             </div>
         </div>
     </div>

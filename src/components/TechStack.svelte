@@ -1,108 +1,38 @@
 <script>
+    import { each } from "svelte/internal";
+
+    export let techStackData = [];
 </script>
 
 <div class="tech-stack-wrapper vw-100">
-    <h1>TECH STACK</h1>
-    <div class="d-flex flex-row flex-wrap justify-content-center align-item-center">
-        <div class="card border-secondary mb-3" style="max-width: 18rem;">
-            <div class="card-header">Header</div>
-            <img
-                src="https://svelte.dev/favicon.png"
-                class="card-img-top"
-                alt="..."
-            />
-            <div class="card-body text-secondary">
-                <h5 class="card-title">Secondary card title</h5>
-                <p class="card-text">
-                    Some quick example text to build on the card title and make
-                    up the bulk of the card's content.
-                </p>
+    <h1 class="pt-5 pb-5">Technologies Known</h1>
+    <div
+        class="d-flex flex-row flex-wrap justify-content-center align-item-center"
+    >
+        {#each techStackData as tech (tech.id)}
+            <div class="card border-none mb-3 mx-5" style="max-width: 18rem;">
+                <img src={tech.img_url} class="card-img-top" alt={tech.name} />
+                <div class="card-body text-white">
+                    <h5 class="card-title">{tech.name}</h5>
+                </div>
             </div>
-        </div>
-        <div class="card border-dark mb-3" style="max-width: 18rem;">
-            <div class="card-header">Header</div>
-            <img
-                src="https://svelte.dev/favicon.png"
-                class="card-img-top"
-                alt="..."
-            />
-            <div class="card-body">
-                <h5 class="card-title">Dark card title</h5>
-                <p class="card-text">
-                    Some quick example text to build on the card title and make
-                    up the bulk of the card's content.
-                </p>
-            </div>
-        </div>
-        <div class="card border-light mb-3" style="max-width: 18rem;">
-            <div class="card-header">Header</div>
-            <img
-                src="https://svelte.dev/favicon.png"
-                class="card-img-top"
-                alt="..."
-            />
-            <div class="card-body">
-                <h5 class="card-title">Light card title</h5>
-                <p class="card-text">
-                    Some quick example text to build on the card title and make
-                    up the bulk of the card's content.
-                </p>
-            </div>
-        </div>
-        <div class="card border-light mb-3" style="max-width: 18rem;">
-            <div class="card-header">Header</div>
-            <img
-                src="https://svelte.dev/favicon.png"
-                class="card-img-top"
-                alt="..."
-            />
-            <div class="card-body">
-                <h5 class="card-title">Light card title</h5>
-                <p class="card-text">
-                    Some quick example text to build on the card title and make
-                    up the bulk of the card's content.
-                </p>
-            </div>
-        </div>
-        <div class="card border-light mb-3" style="max-width: 18rem;">
-            <div class="card-header">Header</div>
-            <img
-                src="https://svelte.dev/favicon.png"
-                class="card-img-top"
-                alt="..."
-            />
-            <div class="card-body">
-                <h5 class="card-title">Light card title</h5>
-                <p class="card-text">
-                    Some quick example text to build on the card title and make
-                    up the bulk of the card's content.
-                </p>
-            </div>
-        </div>
-        <div class="card border-light mb-3" style="max-width: 18rem;">
-            <div class="card-header">Header</div>
-            <img
-                src="https://svelte.dev/favicon.png"
-                class="card-img-top"
-                alt="..."
-            />
-            <div class="card-body">
-                <h5 class="card-title">Light card title</h5>
-                <p class="card-text">
-                    Some quick example text to build on the card title and make
-                    up the bulk of the card's content.
-                </p>
-            </div>
-        </div>
+        {:else}
+            <h2 class="text-secondary">Error loading data...</h2>
+        {/each}
     </div>
 </div>
 
 <style>
     .tech-stack-wrapper {
-        background-color: #29b6f6;
+        background-color: #4fc3f7;
+    }
+
+    .tech-stack-wrapper > h1 {
+        font-size: 5rem;
     }
 
     .card {
-        background-color: rgba(0, 0, 0, 0);
+        background-color: rgba(0, 0, 0, 0.5);
+        /* margin: 5vw; */
     }
 </style>

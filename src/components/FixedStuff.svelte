@@ -30,11 +30,6 @@
         }
     }
 
-    .lni:hover {
-        animation: change-color 3s ease-in-out infinite;
-        font-weight: bold;
-    }
-
     .icon-holder {
         transition: all 0.1s ease;
     }
@@ -42,5 +37,10 @@
     .icon-holder>button {
         border: none;
         background-color: rgba(0, 0, 0, 0);
+    }
+
+    .icon-holder>button:hover .lni {
+        animation: change-color 3s ease-in-out infinite;
+        font-weight: bold;
     }
 </style>

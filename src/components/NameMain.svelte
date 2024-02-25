@@ -18,7 +18,7 @@
 <style>
     .back-header {
         background-color: rgba(0, 0, 0, 0.3);
-        filter: blur(5px);
+        filter: blur(10px);
         z-index: 990;
     }
 
@@ -36,5 +36,9 @@
     #main-h1:hover {
         word-spacing: 1.5vw;
         letter-spacing: 1vw;
+    }
+
+    .kind-of-header {
+        z-index: 999 !important;
     }
 </style>

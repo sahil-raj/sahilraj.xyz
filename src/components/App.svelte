@@ -3,6 +3,7 @@
     import FixedStuff from "./FixedStuff.svelte";
     import NameMain from "./NameMain.svelte";
     import RandomStuff from "./RandomStuff.svelte";
+    import TechStack from "./TechStack.svelte";
 
     let curPosObj = undefined;
 
@@ -102,11 +103,11 @@
                     </svg>
                 </div>
                 <RandomStuff />
-                <svg style="background-color: #29b6f6;" viewBox="0 0 500 200">
+                <!-- <svg style="background-color: #29b6f6;" viewBox="0 0 500 200">
                     <path fill="#4fc3f7" d="M 0,100 C 150,200 350,0 500,100 L 500,00 L 0,0"
                     ></path>
-                </svg>
-                <div style="height: 100vh;background-color:#29b6f6;"></div>
+                </svg> -->
+                <TechStack />
             </div>
         </div>
     </div>

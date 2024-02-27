@@ -25,7 +25,7 @@
                 window.innerHeight || 0,
             );
             window.scrollTo(0, vh);
-            document.getElementById("main-h1").style.fontSize = "5vw";
+            //document.getElementById("main-h1").style.fontSize = "5vw";
         });
     };
 

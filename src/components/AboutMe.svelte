@@ -1,17 +1,15 @@
 <div class="about-me-wrapper vw-100">
     <h1 class="pt-5 pb-5">About Me</h1>
-    <div class="card mb-3 m-auto mb-0" style="max-width: 90vw;">
+    <div class="card mb-0 m-auto mb-0" style="max-width: 90vw;">
         <div class="row g-0">
             <div class="col-md-4">
                 <img src="https://sahilraj.xyz/favicon.png" class="img-fluid rounded-start" alt="..." />
             </div>
             <div class="col-md-8">
                 <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">
-                        This is a wider card with supporting text below as a
-                        natural lead-in to additional content. This content is a
-                        little bit longer.
+                    <h5 class="card-title text-dark">Sahil Raj</h5>
+                    <p class="card-text text-secondary">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro, dolorum, beatae consequatur, odio numquam ullam excepturi praesentium facere ea ducimus minima magnam reiciendis sit illum accusamus assumenda voluptates libero laboriosam?
                     </p>
                     <p class="card-text">
                         <small class="text-body-secondary"
@@ -22,12 +20,11 @@
             </div>
         </div>
     </div>
-    <h1>test</h1>
 </div>
 
 <style>
     .about-me-wrapper {
         background-color: #4fc3f7;
-        /* height: 50vh; */
+        padding-bottom: 5rem;
     }
 </style>

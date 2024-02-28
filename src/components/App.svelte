@@ -4,6 +4,7 @@
     import NameMain from "./NameMain.svelte";
     import RandomStuff from "./RandomStuff.svelte";
     import TechStack from "./TechStack.svelte";
+    import AboutMe from "./AboutMe.svelte";
 
     let techStackData, curPosObj = undefined;
 
@@ -112,6 +113,7 @@
                     <path fill="#4fc3f7" d="M 0,100 C 150,200 350,0 500,100 L 500,00 L 0,0"
                     ></path>
                 </svg> -->
+                <AboutMe />
                 <TechStack {techStackData}/>
             </div>
         </div>

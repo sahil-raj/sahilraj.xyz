@@ -16,6 +16,13 @@
                             >Last updated 3 mins ago</small
                         >
                     </p> -->
+                    <h3 class="card-text">
+                        <button><a href="https://github.com/sahil-raj"><i class="lni lni-github text-body-secondary p-3"></i></a></button>
+                        <button><a href="https://www.linkedin.com/in/sahil-raj-184a85187/"><i class="lni lni-linkedin text-body-secondary p-3"></i></a></button>
+                        <button><a href="mailto:sahilrajaaru@outlook.com"><i class="lni lni-envelope text-body-secondary p-3"></i></a></button>
+                        <button><i class="lni lni-twitter text-body-secondary p-3"></i></button>
+                        <button><a href="https://www.instagram.com/_sahil.raj/"><i class="lni lni-instagram-original text-body-secondary p-3"></i></a></button>
+                    </h3>
                 </div>
             </div>
         </div>
@@ -26,5 +33,16 @@
     .about-me-wrapper {
         background-color: #4fc3f7;
         padding-bottom: 5rem;
+    }
+
+    button {
+        border-radius: 50%;
+        border: 1px solid white;
+        background-color: rgba(0, 0, 0, 0);
+        transition: all 0.5s;
+    }
+
+    button:hover {
+        border: 1px solid gray;
     }
 </style>

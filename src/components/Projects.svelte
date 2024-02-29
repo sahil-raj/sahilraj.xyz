@@ -26,7 +26,7 @@
             </div>
         </div>
         {:else}
-        <h3 class="text-dark">Working on projects...</h3>
+        <h3 class="text-dark">Working on it...</h3>
         <p class="text-dark">check again later</p>
         {/each}
 

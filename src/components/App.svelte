@@ -6,6 +6,7 @@
     import AboutMe from "./AboutMe.svelte";
     import TechStack from "./TechStack.svelte";
     import Projects from "./Projects.svelte";
+    // import ContactMe from "./ContactMe.svelte";
     import Footer from "./Footer.svelte";
 
     let techStackData, projectsData, curPosObj = undefined;
@@ -119,6 +120,8 @@
                 <AboutMe />
                 <TechStack {techStackData}/>
                 <Projects {projectsData}/>
+                <!-- <ContactMe /> -->
+                <!-- move contact me stuff in about me -->
                 <Footer />
             </div>
         </div>

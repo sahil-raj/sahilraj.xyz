@@ -7,7 +7,7 @@
     <div>
 
         {#each projectsData as project (project.id)}
-        <div class="card mb-3" style="max-width: 540px;">
+        <div class="card mb-3" style="max-width: 50vw;">
             <div class="row g-0">
                 <div class="col-md-4 m-auto">
                     <img src={project.img_src} class="img-fluid rounded-start" alt={project.name} />

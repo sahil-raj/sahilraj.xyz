@@ -2,7 +2,7 @@
     // logic in MoveDown
 </script>
 
-<div class="fixed-stuff-main container-fluid">
+<div class="fixed-stuff-main position-fixed container-fluid p-0 m-0">
     <div class="icon-holder position-fixed top-0 pt-3 ps-3 pe-3">
         <button
             on:click={() =>
@@ -35,7 +35,7 @@
     }
 
     .fixed-stuff-main {
-        z-index: 999 !important;
+        z-index: 99999 !important;
     }
 
     .lni {

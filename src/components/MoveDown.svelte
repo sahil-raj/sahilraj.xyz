@@ -41,6 +41,7 @@
         if (window.scrollY >= window.innerHeight) {
             ele2.forEach((e) => {
                 e.style.marginTop = `${window.innerHeight*0.9}px`;
+                // e.children[0].children[0].style.color = "black";
             });
         }
     };

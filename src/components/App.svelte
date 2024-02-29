@@ -3,10 +3,12 @@
     import FixedStuff from "./FixedStuff.svelte";
     import NameMain from "./NameMain.svelte";
     import RandomStuff from "./RandomStuff.svelte";
-    import TechStack from "./TechStack.svelte";
     import AboutMe from "./AboutMe.svelte";
+    import TechStack from "./TechStack.svelte";
+    import Projects from "./Projects.svelte";
+    import Footer from "./Footer.svelte";
 
-    let techStackData, curPosObj = undefined;
+    let techStackData, projectsData, curPosObj = undefined;
 
     const supabaseU = supabase.createClient(
         "https://fwnyrdapohecdztteehc.supabase.co",
@@ -16,6 +18,11 @@
     supabaseU.from("tech_stack").select("*").then((data, err) => {
         if (!err)
             techStackData = data.data;
+    });
+
+    supabaseU.from("projects").select("*").then((data, err) => {
+        if (!err)
+            projectsData = data.data;
     });
 
     // // store components in variables
@@ -115,6 +122,8 @@
                 </svg> -->
                 <AboutMe />
                 <TechStack {techStackData}/>
+                <Projects {projectsData}/>
+                <Footer />
             </div>
         </div>
     </div>

@@ -10,14 +10,10 @@
 
         if (currBodyScroll == 0) {
             start = ele.getBoundingClientRect().top;
-            console.log(start);
             start2 = ele2[0].getBoundingClientRect().top;
-            console.log(start2);
         } else {
-            console.log("this triggred");
             start2 = 0;
             start = window.innerHeight*0.8;//reps 80vh
-            console.log(start, start2)
         }
         ele.addEventListener("click", (e) => {
             let vh = Math.max(
@@ -36,11 +32,17 @@
         ele.style.opacity = `${Math.floor((curr / start) * 100)}%`;
 
         ele2.forEach((e) => {
-            if (100 - Math.floor((curr / start) * 100) <= 90)
+            if (100 - Math.floor((curr / start2) * 100) <= 90)
                 e.style.marginTop = `${
                     100 - Math.floor((curr / start) * 100)
                 }vh`;
         });
+
+        if (window.scrollY >= window.innerHeight) {
+            ele2.forEach((e) => {
+                e.style.marginTop = `${window.innerHeight*0.9}px`;
+            });
+        }
     };
 </script>
 

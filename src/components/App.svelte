@@ -9,22 +9,28 @@
     // import ContactMe from "./ContactMe.svelte";
     import Footer from "./Footer.svelte";
 
-    let techStackData, projectsData, curPosObj = undefined;
+    let techStackData,
+        projectsData,
+        curPosObj = undefined;
 
     const supabaseU = supabase.createClient(
         "https://fwnyrdapohecdztteehc.supabase.co",
         "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImZ3bnlyZGFwb2hlY2R6dHRlZWhjIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MDgyOTQwNzcsImV4cCI6MjAyMzg3MDA3N30.4hphr8LKjjZ0K2KolDk0VvWuL1zz0ohq9MIYA0Ldl1o",
     );
 
-    supabaseU.from("tech_stack").select("*").then((data, err) => {
-        if (!err)
-            techStackData = data.data;
-    });
+    supabaseU
+        .from("tech_stack")
+        .select("*")
+        .then((data, err) => {
+            if (!err) techStackData = data.data;
+        });
 
-    supabaseU.from("projects").select("*").then((data, err) => {
-        if (!err)
-            projectsData = data.data;
-    });
+    supabaseU
+        .from("projects")
+        .select("*")
+        .then((data, err) => {
+            if (!err) projectsData = data.data;
+        });
 
     // // store components in variables
     // const page = document.querySelector(".page");
@@ -99,7 +105,7 @@
 
 <main class="page">
     <div
-        class="container-fluid vh-100 vw-100 m-0 p-0 position-absolute"
+        class="container-fluid vh-100 vw-100 m-0 p-0 position-absolute top-0 start-0"
         on:mousemove={(e) => {
             curPosObj = e;
         }}
@@ -118,8 +124,8 @@
                 </div>
                 <RandomStuff />
                 <AboutMe />
-                <TechStack {techStackData}/>
-                <Projects {projectsData}/>
+                <TechStack {techStackData} />
+                <Projects {projectsData} />
                 <!-- <ContactMe /> -->
                 <!-- move contact me stuff in about me -->
                 <Footer />
@@ -131,6 +137,5 @@
 <style>
     .container-fluid {
         background-color: rgba(0, 0, 0, 0.7);
-        /* overflow-x: hidden; */
     }
 </style>

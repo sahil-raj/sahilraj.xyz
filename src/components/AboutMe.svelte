@@ -9,13 +9,13 @@
                 <div class="card-body">
                     <h5 class="card-title text-dark">Sahil Raj</h5>
                     <p class="card-text text-secondary">
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro, dolorum, beatae consequatur, odio numquam ullam excepturi praesentium facere ea ducimus minima magnam reiciendis sit illum accusamus assumenda voluptates libero laboriosam?
+                        Hey, i am Sahil Raj Student at <a href="https://dsce.edu.in">DSCE</a> Bangalore pursuing B.E in computer science and engineering (Cyber Security). I am a full stack developer with currently focusing on learning blockchain technology.
                     </p>
-                    <p class="card-text">
+                    <!-- <p class="card-text">
                         <small class="text-body-secondary"
                             >Last updated 3 mins ago</small
                         >
-                    </p>
+                    </p> -->
                 </div>
             </div>
         </div>

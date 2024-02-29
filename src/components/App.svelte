@@ -98,7 +98,7 @@
 
 <main class="page">
     <div
-        class="container-fluid vh-100 vw-100 position-absolute"
+        class="container-fluid vh-100 vw-100 m-0 p-0 position-absolute"
         on:mousemove={(e) => {
             curPosObj = e;
         }}
@@ -116,10 +116,6 @@
                     </svg>
                 </div>
                 <RandomStuff />
-                <!-- <svg style="background-color: #29b6f6;" viewBox="0 0 500 200">
-                    <path fill="#4fc3f7" d="M 0,100 C 150,200 350,0 500,100 L 500,00 L 0,0"
-                    ></path>
-                </svg> -->
                 <AboutMe />
                 <TechStack {techStackData}/>
                 <Projects {projectsData}/>
@@ -132,7 +128,5 @@
 <style>
     .container-fluid {
         background-color: rgba(0, 0, 0, 0.7);
-        margin: 0 !important;
-        padding: 0 !important;
     }
 </style>

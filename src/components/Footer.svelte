@@ -1,9 +1,11 @@
 <script>
 
     const ishi = [
-        "NeverStopBuilding",
-        "buidl",
-        "CoffeAndCode"
+        "#NeverStopBuilding",
+        "#buidl",
+        "#CoffeAndCode",
+        "#TouchTheSkyWithGlory",
+        "सीधे मौत के बिना क्या जीवन है"
     ];
 
     let hashVal;
@@ -16,11 +18,11 @@
 
     setInterval(() => {
         hashVal = ishi[randomInt(0, ishi.length-1)];
-    }, 5000);
+    }, 3000);
 </script>
 
 <footer class="vw-100">
-    <h3 class="hash-text text-secondary pt-3">#{hashVal}</h3>
+    <h3 class="hash-text text-secondary pt-3">{hashVal}</h3>
     <p class="text-secondary">made with <i class="lni lni-heart"></i> and svelte</p>
 </footer>
 

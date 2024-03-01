@@ -8,13 +8,11 @@
         "सीधे मौत के बिना क्या जीवन है"
     ];
 
-    let hashVal;
+    let hashVal = ishi[randomInt(0, ishi.length)];
 
     function randomInt(min, max) {
         return Math.floor(Math.random() * (max - min + 1) + min);
     }
-
-    hashVal = ishi[randomInt(0, ishi.length)];
 
     setInterval(() => {
         hashVal = ishi[randomInt(0, ishi.length-1)];

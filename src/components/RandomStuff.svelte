@@ -62,6 +62,7 @@
 <style>
     .wrapper {
         background-color: #4fc3f7;
+        overflow-x: hidden;
     }
 
     .name-hindi-random {

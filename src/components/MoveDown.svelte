@@ -39,10 +39,13 @@
         });
 
         if (window.scrollY >= window.innerHeight) {
+            document.getElementById("main-h1").style.fontSize = "5vw";
             ele2.forEach((e) => {
                 e.style.marginTop = `${window.innerHeight*0.9}px`;
                 // e.children[0].children[0].style.color = "black";
             });
+        } else {
+            document.getElementById("main-h1").style.fontSize = "10vw";
         }
     };
 </script>

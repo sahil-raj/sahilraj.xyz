@@ -116,12 +116,12 @@
             <NameMain />
             <div class="content-holder">
                 <!-- enter content here -->
-                <div style="background-color: #4fc3f7;">
+                <!-- <div style="background-color: #4fc3f7;">
                     <svg viewBox="0 0 500 200">
                         <path d="M 0,100 C 150,200 350,0 500,100 L 500,00 L 0,0"
                         ></path>
                     </svg>
-                </div>
+                </div> -->
                 <RandomStuff />
                 <AboutMe />
                 <TechStack {techStackData} />

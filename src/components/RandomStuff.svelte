@@ -43,15 +43,15 @@
         <h2>WHO<span>?</span></h2>
     </div> -->
     <div
-        class="vw-100 d-flex flex-column justify-content-center align-item-center flex-wrap"
-        style="height: 75vh;"
+        class="d-flex flex-column justify-content-center align-item-center flex-wrap"
+        style="height: 75vh; width: 100%;"
     >
         <div>
             <h1 class="name-hindi-random fw-bold">WHO<span>?</span></h1>
         </div>
         <div
-            class="main-random position-absolute vw-100 overflow-hidden"
-            style="height: 75vh;"
+            class="main-random position-absolute overflow-hidden"
+            style="height: 75vh; width: 100%;"
         >
             {@html randCont}
             {@html randCont2}

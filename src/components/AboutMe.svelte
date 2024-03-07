@@ -1,4 +1,4 @@
-<div class="about-me-wrapper vw-100">
+<div class="about-me-wrapper">
     <h1 class="pt-5 pb-5">About Me</h1>
     <div class="card mb-0 m-auto mb-0" style="max-width: 90vw;">
         <div class="row g-0">
@@ -33,6 +33,7 @@
     .about-me-wrapper {
         background-color: #4fc3f7;
         padding-bottom: 5rem;
+        width: 100%;
     }
 
     button {

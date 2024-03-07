@@ -2,7 +2,7 @@
     export let projectsData = [];
 </script>
 
-<div class="projects-wrapper vw-100">
+<div class="projects-wrapper">
     <h1 class="pt-5 pb-5">Projects</h1>
     <div>
 
@@ -38,6 +38,7 @@
         background-color: #4fc3f7;
         padding-bottom: 5rem;
         z-index: 9;
+        width: 100%;
     }
 
     .card {

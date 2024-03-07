@@ -105,7 +105,7 @@
 
 <main class="page">
     <div
-        class="container-fluid vh-100 vw-100 m-0 p-0 position-absolute top-0 start-0"
+        class="container-fluid vh-100 m-0 p-0 position-absolute top-0 start-0"
         on:mousemove={(e) => {
             curPosObj = e;
         }}

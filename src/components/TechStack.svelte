@@ -12,7 +12,7 @@
     }
 </script>
 
-<div class="tech-stack-wrapper vw-100">
+<div class="tech-stack-wrapper">
     <h1 class="pt-5 pb-5">Technologies Known</h1>
     <div
         class="card-holder d-flex flex-row flex-wrap justify-content-center align-item-center"
@@ -77,6 +77,7 @@
     .tech-stack-wrapper {
         background-color: #4fc3f7;
         overflow-x: hidden;
+        width: 100%;
     }
 
     .tech-stack-wrapper > h1 {

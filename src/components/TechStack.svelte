@@ -1,3 +1,4 @@
+<!-- switch lineicons -->
 <script>
     import { each, query_selector_all } from "svelte/internal";
 

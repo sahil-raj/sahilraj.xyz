@@ -61,7 +61,7 @@
 
 <style>
     .wrapper {
-        background-color: #4fc3f7;
+        background-color: #29524a;
         overflow-x: hidden;
     }
 

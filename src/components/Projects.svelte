@@ -35,7 +35,7 @@
 
 <style>
     .projects-wrapper {
-        background-color: #4fc3f7;
+        background-color: #29524a;
         padding-bottom: 5rem;
         z-index: 9;
         width: 100%;

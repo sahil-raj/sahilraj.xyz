@@ -31,7 +31,7 @@
 
 <style>
     .about-me-wrapper {
-        background-color: #4fc3f7;
+        background-color: #29524a;
         padding-bottom: 5rem;
         width: 100%;
     }

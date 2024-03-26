@@ -3,7 +3,6 @@
     const ishi = [
         "#NeverStopBuilding",
         "#buidl",
-        "#CoffeAndCode",
         "#TouchTheSkyWithGlory",
         "सीधे मौत के बिना क्या जीवन है"
     ];

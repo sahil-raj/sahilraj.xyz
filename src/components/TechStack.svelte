@@ -24,7 +24,7 @@
                     class="card border-none mb-3 mx-5 w-50"
                     style="max-width: 18rem;"
                 >
-                    <i class="card-img-top rounded pt-3 pb-3 lni {tech.img_url} text-black"></i>
+                    <i class="card-img-top rounded pt-3 pb-3 {tech.img_url} text-black"></i>
                     <div class="card-body text-black">
                         <h5 class="card-title">{tech.name}</h5>
                     </div>
@@ -38,7 +38,7 @@
                     class="card border-none mb-3 mx-5 w-50"
                     style="max-width: 18rem;"
                 >
-                    <i class="card-img-top rounded pt-3 pb-3 lni {tech.img_url} text-black"></i>
+                    <i class="card-img-top rounded pt-3 pb-3 {tech.img_url} text-black"></i>
                     <div class="card-body text-black">
                         <h5 class="card-title">{tech.name}</h5>
                     </div>
@@ -62,7 +62,7 @@
                         class="card border-none mb-3 mx-5 w-50"
                         style="max-width: 18rem;"
                     >
-                        <i class="card-img-top rounded pt-3 pb-3 lni {tech.img_url} text-black"
+                        <i class="card-img-top rounded pt-3 pb-3 {tech.img_url} text-black"
                         ></i>
                         <div class="card-body text-black">
                             <h5 class="card-title">{tech.name}</h5>

@@ -19,7 +19,7 @@
                             {project.description}
                         </p>
                         <h3 class="card-text">
-                            <a href={project.github_link} class="text-secondary"><i class="lni lni-github"></i></a>
+                            <a href={project.github_link} target="_blank" class="text-secondary"><i class="lni lni-github"></i></a>
                         </h3>
                     </div>
                 </div>

@@ -18,7 +18,7 @@
 <style>
     .back-header {
         background-color: rgba(0, 0, 0, 0.3);
-        filter: blur(10px);
+        backdrop-filter: blur(10px);
         z-index: 990;
     }
 

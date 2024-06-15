@@ -92,6 +92,7 @@
 
     .card {
         background-color: rgba(0, 0, 0, 0.2);
+        backdrop-filter: blur(10px);
         transition: all 0.5s ease;
     }
 </style>

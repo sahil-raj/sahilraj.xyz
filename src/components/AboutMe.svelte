@@ -19,7 +19,7 @@
                     <h3 class="card-text">
                         <button><a href="https://github.com/sahil-raj"><i class="lni lni-github text-body-secondary p-3"></i></a></button>
                         <button><a href="https://www.linkedin.com/in/sahil-raj-184a85187/"><i class="lni lni-linkedin text-body-secondary p-3"></i></a></button>
-                        <button><a href="mailto:sahilrajaaru@outlook.com"><i class="lni lni-envelope text-body-secondary p-3"></i></a></button>
+                        <button><a href="mailto:me@sahilraj.xyz"><i class="lni lni-envelope text-body-secondary p-3"></i></a></button>
                         <button><a href="https://twitter.com/sahilrajx"><i class="lni lni-twitter text-body-secondary p-3"></i></a></button>
                         <button><a href="https://www.instagram.com/_sahil.raj/"><i class="lni lni-instagram-original text-body-secondary p-3"></i></a></button>
                     </h3>

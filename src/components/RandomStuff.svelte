@@ -17,7 +17,7 @@
         "Developer",
         "Student",
         "Builder",
-        "Blockchain Enthusiast"
+        "Blockchain Developer"
     ];
 
     function getHtml(x) {
